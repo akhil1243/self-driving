@@ -1,0 +1,43 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: Selfdriving_output.py
+--------------------------------------------------------------------------------
+Selfdriving_output.py:245:12: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'Selfdriving_output.py'
+ outputting to 'Selfdriving_output_v2.py'
+--------------------------------------------------------------------------------
+
+105:14: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+113:11: INFO: Added keywords to args of function 'tf.nn.conv2d'
+113:11: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+115:10: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+116:9: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+158:7: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+166:18: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+174:18: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+182:18: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+190:18: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+203:7: INFO: Renamed 'tf.InteractiveSession' to 'tf.compat.v1.InteractiveSession'
+206:13: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+209:7: INFO: Added keywords to args of function 'tf.reduce_mean'
+211:13: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+212:9: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+214:8: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+245:12: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+259:7: INFO: Renamed 'tf.InteractiveSession' to 'tf.compat.v1.InteractiveSession'
+260:8: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+--------------------------------------------------------------------------------
+
